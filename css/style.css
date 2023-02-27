@@ -34,16 +34,24 @@
 
 #jumbottron .row h1 {
   padding-top: 14rem;
+  padding-bottom: 3rem;
 }
 
 @media screen and (max-width: 821px) {
   #jumbottron .row h1 {
-    padding-top: 14rem;
+    padding-top: 16rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   #jumbottron .row h1 {
-    padding-top: 9rem;
+    padding-top: 8rem;
+    padding-bottom: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #jumbottron .row h5 {
+    font-size: medium;
   }
 }
