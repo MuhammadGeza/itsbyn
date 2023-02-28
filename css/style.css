@@ -4,11 +4,11 @@ body {
 
 @media screen and (max-width: 480px) {
   p {
-    font-size: 18px;
+    font-size: medium;
   }
 
   .more-text p {
-    font-size: 10px;
+    font-size: medium;
   }
 }
 section {
@@ -27,14 +27,14 @@ section {
 
 @media screen and (max-width: 480px) {
   .c-item {
-    height: 350px;
+    height: 300px;
     background-color: black;
     padding-top: 3rem;
   }
 }
 
 .content h1 {
-  padding-top: 10rem;
+  padding-top: 12rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -43,7 +43,7 @@ section {
   }
 
   .content h1 {
-    padding-top: 5rem !important;
+    padding-top: 4rem !important;
   }
 }
 
