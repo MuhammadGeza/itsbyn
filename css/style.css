@@ -16,6 +16,16 @@ body {
 #jumbotron h1 {
   padding-top: 10rem;
 }
+
+@media screen and (max-width: 480px) {
+  #jumbotron {
+    height: 20rem;
+  }
+
+  #jumbotron h1 {
+    padding-top: 4.5rem;
+  }
+}
 /* @media screen and (max-width: 480px) {
   .navbar {
     min-height: 50px !important;
