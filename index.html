@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- Fonts Awesome Icons Source: https://fontawesome.com/icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -24,7 +26,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" style="background: #000000">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand text-white" data-aos="fade-right" data-aos-duration="1000" href="#">Itsbyn</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,9 +34,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto" data-aos="fade-left" data-aos-duration="1000">
-            <a class="nav-link active text-white" href="#">Home</a>
-            <a class="nav-link active text-white" href="#about">About</a>
-            <a class="nav-link active text-white" href="#gallery">Gallery</a>
+            <a class="nav-link active text-white js-scroll-trigger" href="#">HOME</a>
+            <a class="nav-link active text-white js-scroll-trigger" href="#about">ABOUT</a>
+            <a class="nav-link active text-white js-scroll-trigger" href="#gallery">CATALOG</a>
+            <a class="nav-link active text-white js-scroll-trigger" href="#contact">CONTACT</a>
           </div>
         </div>
       </div>
@@ -42,7 +45,7 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <div id="jumbotron" class="mb-4">
+    <!-- <div id="jumbotron" class="mb-4">
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active c-item" data-bs-interval="5000">
@@ -71,7 +74,10 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+    </div> -->
+    <section id="jumbotron" style="background-color: #000000">
+      <h1 class="text-white display-1 fw-bolder text-center" data-aos="zoom-in" data-aos-duration="1500">ITSBYN</h1>
+    </section>
     <!-- End -->
 
     <!-- About -->
@@ -79,7 +85,7 @@
       <div class="container text-white">
         <div class="row text-center mb-4">
           <div class="col">
-            <h2 class="viga" data-aos="fade-down" data-aos-duration="700">About</h2>
+            <h2 class="fw-bold" data-aos="fade-down" data-aos-duration="700">About</h2>
           </div>
         </div>
         <div class="row justify-content-center text-center">
@@ -101,21 +107,27 @@
     </section>
     <!-- End -->
 
-    <!-- Gallery -->
+    <!-- CATALOG -->
     <section id="gallery" style="background-color: #000000">
       <div class="container">
         <div class="row mb-4">
           <div class="col text-center text-white">
-            <h2 class="viga" data-aos="fade-down" data-aos-duration="700">Gallery</h2>
+            <h2 class="fw-bold" data-aos="fade-down" data-aos-duration="700">STAGE IV (CRIME OBSESSED)</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-4 col-md-4 mb-4">
             <div class="card" style="background-color: #323232" data-aos="zoom-in" data-aos-duration="1200">
               <div class="card-body">
-                <a href="img/itsbyn1.png" data-fancybox="galery">
-                  <img src="img/itsbyn1.png" class="w-100 rounded" />
-                </a>
+                <div id="carouselExampleDark1" class="carousel carousel-dark slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="img/katalog/Syndicate.jpg" data-fancybox="catalog1">
+                        <img src="img/katalog/Syndicate.jpg" class="d-block w-100" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div class="card-text text-center">
                   <div class="more-btn mt-3">
                     <button type="button" class="btn btn-light">More</button>
@@ -134,9 +146,32 @@
           <div class="col-lg-4 col-md-4 mb-4">
             <div class="card" style="background-color: #323232" data-aos="zoom-in" data-aos-duration="1200">
               <div class="card-body">
-                <a href="img/itsbyn2.png" data-fancybox="galery">
-                  <img src="img/itsbyn2.png" class="w-100 rounded" />
-                </a>
+                <div id="carouselExampleDark2" class="carousel carousel-dark slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="img/katalog/Story Red front.jpg" data-fancybox="catalog2">
+                        <img src="img/katalog/Story Red front.jpg" class="d-block w-100" />
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="img/katalog/Story Red back.jpg" data-fancybox="catalog2">
+                        <img src="img/katalog/Story Red back.jpg" class="d-block w-100" />
+                      </a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
                 <div class="card-text text-center">
                   <div class="more-btn mt-3">
                     <button type="button" class="btn btn-light">More</button>
@@ -155,9 +190,86 @@
           <div class="col-lg-4 col-md-4 mb-4">
             <div class="card" style="background-color: #323232" data-aos="zoom-in" data-aos-duration="1200">
               <div class="card-body">
-                <a href="img/itsbyn3.png" data-fancybox="galery">
-                  <img src="img/itsbyn3.png" class="w-100 rounded" />
-                </a>
+                <div id="carouselExampleDark3" class="carousel carousel-dark slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="img/katalog/Destroy Tee.jpg" data-fancybox="catalog3">
+                        <img src="img/katalog/Destroy Tee.jpg" class="d-block w-100" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text text-center">
+                  <div class="more-btn mt-3">
+                    <button type="button" class="btn btn-light">More</button>
+                  </div>
+                </div>
+                <div class="more-text">
+                  <p class="mb-5 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem veritatis odit tempora atque eius ipsam velit reprehenderit sunt. Esse, dolore assumenda ea sed vero eum similique nemo. Hic nisi suscipit id harum autem
+                    nemo alias a earum soluta esse eveniet tempora nihil molestias laudantium animi, debitis, atque incidunt sed officia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 mb-4">
+            <div class="card" style="background-color: #323232" data-aos="zoom-in" data-aos-duration="1200">
+              <div class="card-body">
+                <div id="carouselExampleDark4" class="carousel carousel-dark slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="img/katalog/White Tee.jpg" data-fancybox="catalog4">
+                        <img src="img/katalog/White Tee.jpg" class="d-block w-100" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text text-center">
+                  <div class="more-btn mt-3">
+                    <button type="button" class="btn btn-light">More</button>
+                  </div>
+                </div>
+                <div class="more-text">
+                  <p class="mb-5 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem veritatis odit tempora atque eius ipsam velit reprehenderit sunt. Esse, dolore assumenda ea sed vero eum similique nemo. Hic nisi suscipit id harum autem
+                    nemo alias a earum soluta esse eveniet tempora nihil molestias laudantium animi, debitis, atque incidunt sed officia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 mb-4">
+            <div class="card" style="background-color: #323232" data-aos="zoom-in" data-aos-duration="1200">
+              <div class="card-body">
+                <div id="carouselExampleDark5" class="carousel carousel-dark slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="img/katalog/Cream Obsessed front.jpg" data-fancybox="catalog5">
+                        <img src="img/katalog/Cream Obsessed front.jpg" class="d-block w-100" />
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="img/katalog/Cream Obsessed back.jpg" data-fancybox="catalog5">
+                        <img src="img/katalog/Cream Obsessed back.jpg" class="d-block w-100" />
+                      </a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark5" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark5" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
                 <div class="card-text text-center">
                   <div class="more-btn mt-3">
                     <button type="button" class="btn btn-light">More</button>
@@ -174,9 +286,66 @@
           </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#323232"
+          fill-opacity="1"
+          d="M0,160L48,165.3C96,171,192,181,288,181.3C384,181,480,171,576,170.7C672,171,768,181,864,202.7C960,224,1056,256,1152,261.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- End -->
+
+    <!-- Contact -->
+    <section id="contact" class="mb-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col" data-aos="fade-down" data-aos-duration="700">
+            <h2 class="fw-bold text-white">Contact At</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="wrapper padding-bottom-5rem justify-content-center" data-aos="zoom-in" data-aos-duration="1200">
+            <div class="col-2">
+              <a class="color-black" href="https://wa.me/6281524371365/?text=" target="_blank">
+                <div class="icon whatsapp color-black">
+                  <div class="tooltip fw-bold" style="font-family: arial">MyWa</div>
+                  <span><i class="fab fa-whatsapp"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-2">
+              <a class="color-black" href="https://www.instagram.com/itsbyn/?hl=id" target="_blank">
+                <div class="icon instagram color-black">
+                  <div class="tooltip fw-bold" style="font-family: arial">@itsbyn</div>
+                  <span><i class="fab fa-instagram"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-2">
+              <a class="color-black" href="mailto:itsbynstore@gmail.com" target="_blank">
+                <div class="icon envelope color-black">
+                  <div class="tooltip fw-bold" style="font-family: arial">itsbynstore@gmail.com</div>
+                  <span><i class="fas fa-envelope"></i></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+
     <!-- Footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#black"
+        fill-opacity="1"
+        d="M0,256L80,229.3C160,203,320,149,480,138.7C640,128,800,160,960,154.7C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+    </svg>
     <footer class="text-white justify-content-center text-center pb-4" style="background-color: #000000">
       <p class="">&copy; Itsbyn 2020</p>
     </footer>
@@ -213,5 +382,12 @@
 
     <!-- Bootsrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Navbar hide if click -->
+    <script type="text/javascript">
+      $('.js-scroll-trigger').click(function () {
+        $('.navbar-collapse').collapse('hide');
+      });
+    </script>
   </body>
 </html>
