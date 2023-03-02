@@ -89,10 +89,10 @@
           </div>
         </div>
         <div class="row justify-content-center text-center">
-          <div class="col">
+          <div class="col-10">
             <p data-aos="zoom-in" data-aos-duration="1200">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, cupiditate numquam! Dignissimos, fuga explicabo consectetur error impedit omnis deserunt consequatur harum corrupti id adipisci beatae delectus debitis dolor
-              non a. Facilis ipsam, reprehenderit praesentium voluptas repellat aspernatur vel nemo sequi maiores magnam quo molestiae, tempora at. Ratione officia ad pariatur.
+              In the Spring/Summer, we discuss crimes that often occur throughout the world. Crime or crime is an act that violates the laws, regulations, norms and values that apply in society. These crimes can harm and threaten the safety
+              and life of a person. Here we present 5 luxury and limited articles entitled [Crime Obsessed].
             </p>
           </div>
         </div>
@@ -296,6 +296,35 @@
     </section>
     <!-- End -->
 
+    <!-- Dropdown -->
+    <!-- <section id="katalog">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Home</button>
+        <ul class="nav nav-tabs dropdown-menu dropdown-menu-dark" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <h1>home</h1>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <h1>profile</h1>
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          <h1>Contact</h1>
+        </div>
+      </div>
+    </section> -->
+
     <!-- Contact -->
     <section id="contact" class="mb-5">
       <div class="container">
@@ -387,6 +416,13 @@
     <script type="text/javascript">
       $('.js-scroll-trigger').click(function () {
         $('.navbar-collapse').collapse('hide');
+      });
+    </script>
+
+    <!-- JS for Dropdown -->
+    <script>
+      $('.dropdown .nav-link').click((e) => {
+        $('.dropdown-toggle').html(e.target.innerHTML);
       });
     </script>
   </body>

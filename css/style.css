@@ -5,10 +5,27 @@ body {
   font-family: arial !important;
 }
 
+section {
+  padding-top: 5rem;
+}
+
+.viga {
+  font-family: Viga;
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: medium;
+  }
+}
+
+/* Navbar */
 .navbar {
   background: rgba(0, 0, 0, 0.6) !important;
 }
+/* End */
 
+/* Jumbotron */
 #jumbotron {
   height: 40rem;
 }
@@ -26,30 +43,9 @@ body {
     padding-top: 4.5rem;
   }
 }
-/* @media screen and (max-width: 480px) {
-  .navbar {
-    min-height: 50px !important;
-  }
-} */
+/* End */
 
-@media screen and (max-width: 480px) {
-  p {
-    font-size: medium;
-  }
-
-  .more-text p {
-    font-size: medium;
-  }
-}
-section {
-  padding-top: 5rem;
-}
-
-.viga {
-  font-family: Viga;
-}
-
-.c-item {
+/* .c-item {
   height: 650px;
   background-color: black;
 }
@@ -86,8 +82,9 @@ section {
 .image {
   display: block;
   width: 100%;
-}
+} */
 
+/* Katalog */
 .card {
   position: relative;
   overflow: hidden;
@@ -118,6 +115,12 @@ section {
   background-color: black;
 }
 
+@media screen and (max-width: 480px) {
+  .more-text p {
+    font-size: medium;
+  }
+}
+
 .more-text::-webkit-scrollbar-thumb {
   background-color: #323232;
 }
@@ -125,6 +128,7 @@ section {
 .more-text.active {
   bottom: 0;
 }
+/* End */
 
 /* Social Media Icons */
 /* Inspired by https://www.codingnepalweb.com/ */
@@ -275,4 +279,14 @@ section {
 .color-black {
   color: black;
 }
-/* End Social Media Icons */
+/* End*/
+
+/* Dropdown */
+#katalog .dropdown .dropdown-menu {
+  display: none;
+}
+
+#katalog .dropdown .dropdown-toggle.show + .dropdown-menu {
+  display: block;
+}
+/* End */
